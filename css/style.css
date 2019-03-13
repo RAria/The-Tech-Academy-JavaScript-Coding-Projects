@@ -126,6 +126,11 @@ input[type=radio   ]:not(old){
 	border-radius: 5px;
 }
 
+#cart>p {
+	text-align: center;
+	font: 20px 'Times New Roman', serif;
+}
+
 #order {
 	color: #fff;
 	flex: 1 250px;

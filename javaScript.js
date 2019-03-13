@@ -27,7 +27,7 @@ function order(){
 };
 function getMeat(runningTotal,txt1,txt2){
     var runningTotal=runningTotal;
-    var meatCount=0; 
+    var meatT=0; 
     var selectedM = [];
     var meatA=document.getElementsByClassName("meat");
     for(var j=0; j<meatA.length; j++){
@@ -38,7 +38,7 @@ function getMeat(runningTotal,txt1,txt2){
     }
     var meatCount=selectedM.length;
     if(meatCount>1){
-        var meatT=(meatCount-1);
+        meatT=(meatCount-1);
     } else {
         meatT=0;
     }
@@ -55,7 +55,7 @@ function getMeat(runningTotal,txt1,txt2){
             txt2=txt2+1+"<br>";
             meatCount=(meatCount-1);
     }
-    runningTotal=runningTotal+meatT;
+
     getVeggie(runningTotal, txt1, txt2);
 };
     
@@ -150,5 +150,7 @@ function clearAll(){
 };
 
 function confirm(){
-    window.alert("We got your order, our chef is on top of it and you will receive it in no time!");
+    document.getElementById("cart").innerHTML="<p>We got your order, our chef is on top of it and you will receive it in no time!</p>";
+    setTimeout("location.reload(true);", 1500);
 };
+
