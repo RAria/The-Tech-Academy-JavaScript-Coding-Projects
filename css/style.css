@@ -1,0 +1,180 @@
+#container{
+    opacity: 0.95;
+}
+    
+#container>h1 {
+    text-align: center; 
+    margin:20px 0 20px 0;
+    color:#ffffcc;
+    font-family: "sans-serif";
+}
+
+body {
+    background-color:#fff;
+    background: url(background.jpg)no-repeat center center fixed;
+    width:100%;
+    height:100%;
+}
+        
+#mainM {
+    margin: 0% auto; 
+    width: 650px;
+    border-radius: 25px;
+    padding: 1px 0px;
+    opacity: 1;
+}
+
+#formM{
+    margin: 0% auto;
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    border-radius: 25px;
+}
+
+.menu{
+    flex: 1 150px;
+    min-width: 0;
+    border: 2px solid rgba(255, 174, 0, 1);
+    box-shadow: 0 0 0 3px #ffffcc;
+    padding: 0 0 10px 0;
+    margin: 10px 0 0 10px;
+}
+
+.menu:nth-child(n){
+    background-color: #ffffcc;
+    opacity: 0.9;
+    border-radius: 5px;
+    border-width: 3px;
+}
+.menu>h3{
+    color:  #fff;
+	text-align: center;
+	margin: 0 auto;
+	background-color: rgba(255, 174, 0, 1);
+    border-radius: 3px;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 1.5px 1.5px 5px rgb(255, 196, 0), 1px 1px 5px #000;
+}
+
+input[type=checkbox]:not(old),
+input[type=radio   ]:not(old){
+  width     : 2em;
+  margin    : 0;
+  padding   : 0;
+  font-size : 1em;
+  opacity   : 1;
+  }
+
+  .button {
+	cursor: pointer;
+	color: #fff;
+	width: 100%;
+	display: block;
+	text-decoration: none;
+	border-radius: 5px;
+	margin: 5px;
+	padding: 10px 0 .1px 0px;
+    font: 'Times New Roman', serif;
+	background-color: rgba(255, 174, 0, 1);
+	box-shadow: 0 0 0 2px #ffffcc;
+	transition-property: transform background, box-shadow, color;
+	transition-duration: .3s, .5s, .2s;
+	transition-timing-function: eas-in-out;
+}
+
+.button>p {
+	text-align: center;
+	font: 20px 'Times New Roman', serif;
+}
+
+.button:hover {
+	color: rgb(0, 0, 0);
+	background-color: rgba(255, 255, 255, .6);
+
+}
+  
+  .controls {
+    padding: 0 0 10px 0;
+    display: flex;
+    flex-direction: columns;
+    justify-content: space-between;
+	margin: 0 auto;
+	width: 550px;
+}
+
+.controls>.button {
+	flex: 1 150px;
+}
+
+#cart {
+	opacity: 0;
+	margin: 15px auto;
+	width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+	background-color: #ffffcc;
+    opacity: 0.8;
+	border: 2px solid rgba(255, 174, 0, 1);
+	box-shadow: 0 0 0 3px rgba(255,255,255, .8);
+	border-radius: 5px;
+}
+
+#order {
+	color: #fff;
+	flex: 1 250px;
+	height: 50px;
+	width: 250px;
+	padding: 0 0 0px 10px;
+	background-color: rgba(255, 174, 0, 1);
+	border-radius: 5px 0 0 0;
+	text-shadow:  1px 1px 5px #000;
+}
+
+#subTotal {
+	color: #fff;
+	flex: 1 250px;
+	height: 50px;
+	width: 250px;
+	padding: 0 0 0px 10px;
+	background-color: rgba(255, 174, 0, 1);
+	border-radius: 0 5px 0 0;
+	text-shadow:  1px 1px 5px #000;
+}
+
+#showText1 {
+	font-size: 13px;
+	flex: 1 250px;
+	padding: 1px 0 10px 10px;
+	width: 250px;
+	border-radius: 0 0 0 0;
+}
+
+#showText2 {
+	font-size: 13px;
+	flex: 1 250px;
+	padding: 1px 0 10px 10px;
+	width: 250px;
+	border-radius: 0 0 0 0;
+}
+
+#totalPrice1 {
+	flex: 1 250px;
+	padding: 0 0 10px 10px;
+	width: 250px;
+	border-radius: 0 0 0 0;
+}
+
+#totalPrice2 {
+	flex: 1 250px;
+	font-weight: bold;
+	padding: 20px 0 10px 10px;
+	width: 250px;
+	border-radius: 0 0 0 0;
+}

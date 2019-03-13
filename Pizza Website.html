@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+		<title>Pizza Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+    <!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">		<!--/Bootstrap Css-->
+		<link rel="stylesheet" href="./css/style.css">
+		<!-- Bootstrap CSS -->
+		
+  </head>
+  <body>
+			
+	<div id="container">
+		<h1>Satisfy Your Hunger with Varity of Delecious Pizzas!</h1>
+		<div id="mainM">
+			<form id="formM">
+					<div class="menu">
+						<h3>Pizza Size</h3>
+						<input type="radio" class="size" name="Sz" value="Personal Pizza" >Personal Pizza<br>
+						<input type="radio" class="size" name="Sz" value="Medium Pizza" checked>Medium Pizza <br>
+						<input type="radio" class="size" name="Sz" value="Large Pizza">Large Pizza <br>
+						<input type="radio" class="size" name="Sz" value="Extra Large Pizza">Extra Large Pizza <br>
+					</div>
+
+					<div class="menu">
+							<h3>Meat</h3>
+							<input type="checkbox" class="meat" name="Mt" value="Pepperoni">Pepperoni<br>
+							<input type="checkbox" class="meat" name="Mt" value="Sausage">Sausage<br>
+							<input type="checkbox" class="meat" name="Mt" value="Canadian Bacon">Canadian Bacon<br>
+							<input type="checkbox" class="meat" name="Mt" value="Ground Beef">Ground Beef<br>
+							<input type="checkbox" class="meat" name="Mt" value="Anchovy">Anchovy<br>
+							<input type="checkbox" class="meat" name="Mt" value="Chicken" checked>Chicken<br>
+					</div>
+
+					<div class="menu">
+							<h3>Vegetable</h3>
+							<input type="checkbox" class="veggie" name="Vg" value="Tomatoes"checked>Tomatoes<br>
+							<input type="checkbox" class="veggie" name="Vg" value="Onions">Onions<br>
+							<input type="checkbox" class="veggie" name="Vg" value="Olives">Olives<br>
+							<input type="checkbox" class="veggie" name="Vg" value="Green Peppers">Green Peppers<br>
+							<input type="checkbox" class="veggie" name="Vg" value="Mushrooms">Mushrooms<br>
+							<input type="checkbox" class="veggie" name="Vg" value="Pineapple">Pineapple<br>
+							<input type="checkbox" class="veggie" name="Vg" value="Spinach">Spinach<br>
+							<input type="checkbox" class="veggie" name="Vg" value="Jalapeno">Jalapeno<br>
+						</div>
+
+					<div class="menu">
+						<h3>Cheese</h3>
+						<input type="radio" class="cheese" name="Cs" value="Regular Cheese" checked>Regular<br>
+						<input type="radio" class="cheese" name="Cs" value="No Cheese">No Cheese<br>
+						<input type="radio" class="cheese" name="Cs" value="Extra Cheese">Extra Cheese<br>
+					</div>
+
+					<div class="menu">
+						<h3>Crust</h3>
+						<input type="radio" class="crust" name="Ct" value="Plain Crust" checked>Plain Crust<br>
+						<input type="radio" class="crust" name="Ct" value="Garlic Butter Crust">Garlic Butter Crust<br>
+						<input type="radio" class="crust" name="Ct" value="Cheese Stuffed Crust">Cheese Stuffed Crust<br>
+						<input type="radio" class="crust" name="Ct" value="Spicy Crust">Spicy Crust<br>
+						<input type="radio" class="crust" name="Ct" value="House Special Crust">House Special Crust<br>
+					</div>
+
+					<div class="menu">
+						<h3>Sauce</h3>
+						<input type="radio" class="sauce" name="Sc" value="Marinara Sauce" checked>Marinara Sauce<br>
+						<input type="radio" class="sauce" name="Sc" value="White Sauce">White Sauce<br>
+						<input type="radio" class="sauce" name="Sc" value="Barbeque Sauce">Barbeque Sauce<br>
+						<input type="radio" class="sauce" name="Sc" value="No Sauce">No Sauce<br>
+					</div>
+	
+			</form><br>
+			<div class="controls">
+				<div class="button" data-toggle="modal" data-target="#test" onclick="order()">
+					<p>Place Order</p>
+				</div>
+					<div class="button" onclick="clearAll()">
+						<p>Cancel</p>
+					</div>
+			</div>
+		</div>
+	</div>
+	
+		<!-- Modal -->
+	<div class="modal fade" id="test" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">							
+				<div class="modal-content" id="cart">
+					<div id="order"><h3>You Ordered:</h3></div>
+					<div id="subTotal"><h3>Subtotal:</h3></div>
+					<div id="showText1"></div>
+					<div id="showText2"></div>
+					<div id="totalPrice1"><h3>Total Price:</h3></div>
+					<div id="totalPrice2"></div>
+					<div class="modal-footer controls">
+						<button type="button" class="button" data-dismiss="modal" onclick="confirm()"><p>Confirm Order</p></button>
+						<button type="button" class="button" data-dismiss="modal"><p>Cancel</p></button>
+					</div>
+				</div>
+			</div>
+	</div>
+			<!-- Modal -->
+		
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js">
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js">
+		</script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js">
+		</script>
+		<script src=javaScript.js></script>
+  </body>
+</html>
